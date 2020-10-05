@@ -6,29 +6,157 @@ function TimeLineItem(props) {
         <div className="timeline-item"
             onClick={() => {
                 props.setActiveTitle(props.title);
+                props.setDescription(props.description);
+                props.setYear(props.year);
+                props.setT2(props.title2);
             }} >
             <h1 className="timeline-title"> {props.title}</h1>
+            <h2 className="year"> {props.year}</h2>
         </div>
     )
 }
 
 export default function ExperienceScreen() {
-    const [activeTitle, setActiveTitle] = React.useState('BLANK');
-    return (
-        <div className="screen-background">
-            <div className="experience-background">
-                <div className="timeline-background">
-                    <TimeLineItem
-                        title="Camp Counselor"
-                        setActiveTitle={setActiveTitle} />
-                    <TimeLineItem
-                        title="Lifeguard"
-                        setActiveTitle={setActiveTitle}/>
-                </div>
-                <div className="highlight-background">
-                    <h1>{activeTitle}</h1>
+    const [activeTitle, setActiveTitle] = React.useState('');
+    const [year, setYear] = React.useState('');
+    const [title2, setT2] = React.useState('');
+    const [description, setDescription] = React.useState('');
+
+    if (activeTitle != '') {
+        return (
+            <div className="screen-background">
+                <div className="experience-background">
+                    <div className="timeline-background">
+                        <div className="break" />
+                        <h1 className="involvement-category"> HARVARD COLLEGE </h1>
+                        <TimeLineItem
+                            title="Harvard Computer Society"
+                            setActiveTitle={setActiveTitle}
+                            title2="Comper"
+                            setT2={setT2}
+                            year="2020-"
+                            setYear={setYear}
+                            description="Currently comping (applying to) the Harvard Computer Society."
+                            setDescription={setDescription} />
+                        <TimeLineItem
+                            title="Harvard Open Data Project"
+                            setActiveTitle={setActiveTitle}
+                            title2="Comper"
+                            setT2={setT2}
+                            year="2020-"
+                            setYear={setYear}
+                            description="Currently comping (applying to) the Harvard Open Data Project."
+                            setDescription={setDescription} />
+                        <TimeLineItem
+                            title="The Harvard Crimson"
+                            setActiveTitle={setActiveTitle}
+                            title2="Comper"
+                            setT2={setT2}
+                            year="2020-"
+                            setYear={setYear}
+                            description="Currently comping (applying to) the Harvard Crimson. More specifically, comping 
+                                to web design, print design, multimedia, tech, and editorial."
+                            setDescription={setDescription} />
+
+                        <h1 className="involvement-category"> MARC GARNEAU C.I. </h1>
+                        <TimeLineItem
+                            title="TOPS Yearbook Senior Editor"
+                            setActiveTitle={setActiveTitle}
+                            title2="City"
+                            setT2={setT2}
+                            year="2019-2020"
+                            setYear={setYear}
+                            description="Organized the creation of the TOPS Program yearbook.
+                                         Managed a team of writers, photographers, and editors while also overcoming
+                                         a shortened school year to develop a full yearbook."
+                            setDescription={setDescription} />
+                        <h1 className="involvement-category"> OTHER INVOLVEMENT </h1>
+                        <TimeLineItem
+                            title="Lifeguard / APA"
+                            setActiveTitle={setActiveTitle}
+                            title2="City of Toronto"
+                            setT2={setT2}
+                            year="2018-2020"
+                            setYear={setYear}
+                            description="Helped students of all ages learn to swim. Maintained safety of pool environment
+                                for all patrons. Trained in first aid and CPR-C by Canada's National Lifesaving Society."
+                            setDescription={setDescription} />
+                    </div>
+                    <div className="highlight-background">
+                        <h1>{activeTitle}</h1>
+                        <h2 className="title2">{title2}</h2>
+                        <h2>{year}</h2>
+                        <br />
+                        <p>{description} </p>
+                    </div>
                 </div>
             </div>
-        </div>
-    );
+        );
+    }
+    else {
+        return (
+            <div className="screen-background">
+                <div className="experience-background">
+                    <div className="timeline-background">
+                        <div className="break" />
+                        <h1 className="involvement-category"> HARVARD COLLEGE </h1>
+                        <TimeLineItem
+                            title="Harvard Computer Society"
+                            setActiveTitle={setActiveTitle}
+                            title2="Comper"
+                            setT2={setT2}
+                            year="2020-"
+                            setYear={setYear}
+                            description="Currently comping (applying to) the Harvard Computer Society."
+                            setDescription={setDescription} />
+                        <TimeLineItem
+                            title="Harvard Open Data Project"
+                            setActiveTitle={setActiveTitle}
+                            title2="Comper"
+                            setT2={setT2}
+                            year="2020-"
+                            setYear={setYear}
+                            description="Currently comping (applying to) the Harvard Open Data Project."
+                            setDescription={setDescription} />
+                        <TimeLineItem
+                            title="The Harvard Crimson"
+                            setActiveTitle={setActiveTitle}
+                            title2="Comper"
+                            setT2={setT2}
+                            year="2020-"
+                            setYear={setYear}
+                            description="Currently comping (applying to) the Harvard Crimson. More specifically, comping 
+                                to web design, print design, multimedia, tech, and editorial."
+                            setDescription={setDescription} />
+
+                        <h1 className="involvement-category"> MARC GARNEAU C.I. </h1>
+                        <TimeLineItem
+                            title="TOPS Yearbook Senior Editor"
+                            setActiveTitle={setActiveTitle}
+                            title2="City"
+                            setT2={setT2}
+                            year="2019-2020"
+                            setYear={setYear}
+                            description="Organized the creation of the TOPS Program yearbook.
+                                         Managed a team of writers, photographers, and editors while also overcoming
+                                         a shortened school year to develop a full yearbook."
+                            setDescription={setDescription} />
+                        <h1 className="involvement-category"> OTHER INVOLVEMENT </h1>
+                        <TimeLineItem
+                            title="Lifeguard / APA"
+                            setActiveTitle={setActiveTitle}
+                            title2="City of Toronto"
+                            setT2={setT2}
+                            year="2018-2020"
+                            setYear={setYear}
+                            description="Helped students of all ages learn to swim. Maintained safety of pool environment
+                                for all patrons. Trained in first aid and CPR-C by Canada's National Lifesaving Society."
+                            setDescription={setDescription} />
+                    </div>
+                    <div className="empty-background">
+                    </div>
+                </div>
+            </div>
+        );
+    }
 }

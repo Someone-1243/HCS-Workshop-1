@@ -8,7 +8,7 @@ function ViewBtn(props) {
             onClick={() => {
                 props.setViewMore(!props.viewMore)
             }} >
-            <h1>{props.str}</h1>
+            <h3>{props.str}</h3>
         </div>
     )
 }
@@ -19,19 +19,37 @@ export default function AboutScreen() {
         return (
             <div className="screen-background">
                 <div className="intro-background">
-                    <div className="intro-item">
+                    <div className="image-panel">
                         <img src={me} className="intro-picture" />
                     </div>
                     <div className="intro-item">
-                        Wow wow wow! Justin is a pretty cool person! check out all these
-                        details
+                        <h1> JUSTIN YE </h1>
+                        <h2> School: Harvard College</h2>
+                        <h2> Year:  Class of 2024 </h2>
+                        <h2> Concentration: CS </h2>
+                        <h2> Hobbies: Photography, Biking, Ultimate Frisbee </h2>
+                        <p> 
+                            Hey everyone!
+                            <br/>
+                            <br/>
+                            As a first-year student and a prospective computer science concentrator, I'm
+                            super interested in the implications of machine learning for the future.
+                            Specifically, I'm interested in how leveraging machine learning can lead to better,
+                            greener design and what role it can play in the development of new technologies.
+                            I'm also interested in the role of ethics the field of machine learning.
+                            <br />
+                            <br />
+                            Apart from this, I also love being involved with photography and design.
+                            I strive to bring a design mindset to most of my long-term projects, as it is important to me
+                            that the user experience is as easy as possible. 
+                        </p>
+                        <ViewBtn
+                            setViewMore={setViewMore}
+                            viewMore={true}
+                            str="View Less" />
                     </div>
                     
                 </div>
-                <ViewBtn
-                    setViewMore={setViewMore}
-                    viewMore={true}
-                    str="View Less" />
             </div>
         );
     }
@@ -39,17 +57,21 @@ export default function AboutScreen() {
         return (
             <div className="screen-background">
                 <div className="intro-background">
-                    <div className="intro-item">
+                    <div className="image-panel">
                         <img src={me} className="intro-picture" />
                     </div>
                     <div className="intro-item">
-                        Wow wow wow! Justin is a pretty cool person! check out all these
-                        details
+                        <h1> JUSTIN YE </h1>
+                        <h2> School: Harvard College</h2>
+                        <h2> Year:  Class of 2024 </h2>
+                        <h2> Concentration: CS </h2>
+                        <h2> Hobbies: Photography, Biking, Ultimate Frisbee </h2>
+                        <ViewBtn setViewMore={setViewMore}
+                            viewMore={false}
+                            str="Hear from Me" />
                     </div>
                 </div>
-                <ViewBtn setViewMore={setViewMore}
-                    viewMore={false}
-                    str="View More" />
+                
             </div>
         );
     }

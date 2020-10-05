@@ -8,18 +8,18 @@
 
 .timeline-item {
     display: flex;
-    width: 50%;
-    height: 120px;
+    width: 80%;
+    flex-direction: column;
     justify-content: center;
     text-align: center;
-    
     cursor: pointer;
     transition: all 0.2s ease;
 }
 
 .timeline-title {
     vertical-align: middle;
-    margin: auto;
+    margin: 0px auto;
+
 }
 
 .timeline-item:hover {
@@ -49,9 +49,9 @@ p {
 .highlight-background {
   display: flex;
   flex-direction: column;
-  width: 50%;
+  width: 80%;
   height: calc(100%);
-  background: crimson;
+  background: rgba(255,0,0,0.4);
   position: -webkit-sticky;
   position: sticky;
   top: 48px;
@@ -60,8 +60,39 @@ p {
   margin: 32px;
 }
 
+.empty-background {
+    width: 80%;
+    margin: 32px;
+}
+
 .highlight-background h1,
 h4,
 p {
-  margin: 8px;
+    margin: 0px;
+    margin-top: 10px;
+}
+
+.highlight-background p {
+    align-self:flex-start;
+    margin-left: 10%;
+    margin-right: 10%;
+    font-size: 24px;
+    line-height: 32px;
+}
+
+.highlight-background h2{
+    margin: 0px;
+}
+
+.title2{
+    font-style: italic;
+}
+
+.break{
+    height: 48px;
+}
+
+.involvement-category{
+    color: darkblue;
+    font-size: 30px;
 }
