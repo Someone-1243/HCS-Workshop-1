@@ -16,6 +16,6 @@ code {
 .screen-background {
   display: flex;
   flex-direction: column;
-  width: 60%;
+  width: 80%;
   margin: 16px 0;
 }

@@ -32,10 +32,9 @@
 .nav-background {
     display: flex;
     flex-direction: row;
-    width: 60%;
-    justify-content: space-around;
-    border-top: 4px solid black;
-    border-bottom: 4px solid black;
+    width: 90%;
+    border-bottom: 3px solid navy;
+    justify-content: flex-end;
     height: 30px;
 }
 
@@ -49,8 +48,12 @@
 .nav-link {
     text-decoration: none;
     font-weight: 500;
-    color: gray;
+    color: navy;
     justify-content: center;
     align-items: center;
     display: flex;
+    font-size: 36px;
+    padding: 0px 30px;
+    font-variant: small-caps;
+    margin-bottom: 15px;
 }
