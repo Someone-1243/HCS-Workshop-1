@@ -3,10 +3,17 @@
   flex-direction: column;
   width: 60%;
   align-items: center;
-  margin: 16px 0px;
+  margin: 5px 0px;
 }
 
 .info-bar {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content:space-around;
+    text-align: center;
+    vertical-align: central;
+    margin: 5px 0px;
 }
 
 .info-item {
@@ -23,6 +30,13 @@
 }
 
 .nav-background {
+    display: flex;
+    flex-direction: row;
+    width: 60%;
+    justify-content: space-around;
+    border-top: 4px solid black;
+    border-bottom: 4px solid black;
+    height: 30px;
 }
 
 .nav-item {
@@ -33,7 +47,10 @@
 }
 
 .nav-link {
-  text-decoration: none;
-  font-weight: 500;
-  color: gray;
+    text-decoration: none;
+    font-weight: 500;
+    color: gray;
+    justify-content: center;
+    align-items: center;
+    display: flex;
 }
