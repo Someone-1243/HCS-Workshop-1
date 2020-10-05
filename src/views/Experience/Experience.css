@@ -7,13 +7,19 @@
 }
 
 .timeline-item {
-  display: flex;
-  width: 50%;
-  height: 120px;
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;
-  transition: all 0.2s ease;
+    display: flex;
+    width: 50%;
+    height: 120px;
+    justify-content: center;
+    text-align: center;
+    
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.timeline-title {
+    vertical-align: middle;
+    margin: auto;
 }
 
 .timeline-item:hover {
