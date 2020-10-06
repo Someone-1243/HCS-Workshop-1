@@ -78,6 +78,7 @@ p {
     margin-right: 10%;
     font-size: 24px;
     line-height: 32px;
+    margin-bottom: 24px;
 }
 
 .highlight-background h2{
@@ -89,7 +90,7 @@ p {
 }
 
 .break{
-    height: 48px;
+    height: 10px;
 }
 
 .involvement-category{

@@ -1,6 +1,7 @@
 import React from "react";
 import "./About.css";
 import me from "../../assets/Justin.jpg";
+import { Link } from 'react-router-dom';
 
 function ViewBtn(props) {
     return (
@@ -27,7 +28,6 @@ export default function AboutScreen() {
                         <h2> School: Harvard College</h2>
                         <h2> Year:  Class of 2024 </h2>
                         <h2> Concentration: CS </h2>
-                        <h2> Hobbies: Photography, Biking, Ultimate Frisbee </h2>
                         <p> 
                             Hey everyone!
                             <br/>
@@ -48,8 +48,30 @@ export default function AboutScreen() {
                             viewMore={true}
                             str="View Less" />
                     </div>
-                    
                 </div>
+
+                <div className="contact-bar">
+                    {<p className="info-item">justinye@college.harvard.edu</p>}
+                </div>
+                {<div className="info-bar">
+                    <Link className="info-link"
+                        to={{ pathname: "https://www.facebook.com/profile.php?id=100010354304981" }}
+                        target="_blank">
+                        Facebook
+                            </Link>
+
+                    <Link className="info-link"
+                        to={{ pathname: "https://github.com/Someone-1243" }}
+                        target="_blank">
+                        GitHub
+                            </Link>
+
+                    <Link className="info-link"
+                        to={{ pathname: "https://www.linkedin.com/in/justin-ye-1a1507190/" }}
+                        target="_blank">
+                        LinkedIn
+                            </Link>
+                </div>}
             </div>
         );
     }
@@ -65,12 +87,36 @@ export default function AboutScreen() {
                         <h2> School: Harvard College</h2>
                         <h2> Year:  Class of 2024 </h2>
                         <h2> Concentration: CS </h2>
-                        <h2> Hobbies: Photography, Biking, Ultimate Frisbee </h2>
+
                         <ViewBtn setViewMore={setViewMore}
                             viewMore={false}
                             str="Hear from Me" />
                     </div>
                 </div>
+                <br />
+                <br/> 
+                <div className="contact-bar">
+                    {<p className="info-item">justinye@college.harvard.edu</p>}
+                </div>
+                {<div className="info-bar">
+                    <Link className="info-link"
+                        to={{ pathname: "https://www.facebook.com/profile.php?id=100010354304981" }}
+                        target="_blank">
+                        Facebook
+                            </Link>
+
+                    <Link className="info-link"
+                        to={{ pathname: "https://github.com/Someone-1243" }}
+                        target="_blank">
+                        GitHub
+                            </Link>
+
+                    <Link className="info-link"
+                        to={{ pathname: "https://www.linkedin.com/in/justin-ye-1a1507190/" }}
+                        target="_blank">
+                        LinkedIn
+                            </Link>
+                </div>}
                 
             </div>
         );

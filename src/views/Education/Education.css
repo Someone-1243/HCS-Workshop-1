@@ -1,0 +1,116 @@
+﻿.screen-background{
+    display: flex;
+    justify-content: center;
+}
+
+.education-background {
+    display: flex;
+    align-content: center;
+}
+
+.timeline-background {
+    width: 80%;
+    flex-direction: column;
+    padding-left: 10%;
+}
+
+.header {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    margin-top: 20px;
+    margin-bottom: 0px;
+    border: navy 5px solid;
+}
+
+.timeline-title {
+    vertical-align: middle;
+    margin: 0px auto;
+}
+
+.header:hover {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    background-color: rgba(0,0,100,0.4);
+}
+
+.descript {
+    border-left: 3px navy solid;
+    border-right: navy 3px solid;
+    border-bottom: navy 3px solid;
+    width: 100%;
+    margin-left: 2px;
+    margin-top: 0px;
+}
+
+.descript p, h2 {
+    font-size: 24px;
+    margin: 10px;
+}
+
+.timeline-ball {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    border-radius: 12px;
+    background: crimson;
+}
+
+.education-info {
+    padding: 24px;
+    font-size: 10pt;
+}
+
+.education-info h4,
+p {
+    margin: 0;
+}
+
+.highlight-background {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    height: calc(100%);
+    background: rgba(255,0,0,0.4);
+    position: -webkit-sticky;
+    position: sticky;
+    top: 48px;
+    justify-content: center;
+    align-items: center;
+    margin: 32px;
+}
+
+.empty-background {
+    width: 80%;
+    margin: 32px;
+}
+
+.highlight-background h1,
+h4,
+p {
+    margin: 0px;
+    margin-top: 10px;
+}
+
+.highlight-background p {
+    align-self: flex-start;
+    margin-left: 10%;
+    margin-right: 10%;
+    font-size: 24px;
+    line-height: 32px;
+    margin-bottom: 24px;
+}
+
+.highlight-background h2 {
+    margin: 0px;
+}
+
+.title2 {
+    font-style: italic;
+}
+
+
