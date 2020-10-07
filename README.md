@@ -6,7 +6,7 @@ Welcome to my website!
 
 Education page covering university, high school, and academic awards.
 
-
+![Education Page](https://github.com/Someone-1243/HCS-Workshop-1/blob/master/src/assets/screenshots/education.PNG)
 
 ### Button on About Page to show more/less
 
