@@ -1,15 +1,15 @@
-## Your Name
+## Justin Ye
 
 Welcome to my website!
 
-### Added Feature #1
+### Education Page
 
-Description
+Education page covering university, high school, and academic awards.
 
-Screenshots
 
-### Added Feature #2
 
-Description
+### Button on About Page to show more/less
 
-Screenshots
+Added a button on the about page that toggles to show a message from me or to hide the message from me.
+
+
