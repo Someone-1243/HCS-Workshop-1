@@ -12,4 +12,8 @@ Education page covering university, high school, and academic awards.
 
 Added a button on the about page that toggles to show a message from me or to hide the message from me.
 
+![Closed](https://github.com/Someone-1243/HCS-Workshop-1/blob/master/src/assets/screenshots/about%20closed.PNG)
+
+![Open](https://github.com/Someone-1243/HCS-Workshop-1/blob/master/src/assets/screenshots/about%20open.PNG)
+
 
