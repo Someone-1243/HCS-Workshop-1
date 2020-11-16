@@ -3,12 +3,11 @@
     "",
     "\\src",
     "\\src\\components",
-    "\\src\\components\\Navbar",
     "\\src\\components\\Project",
     "\\src\\views",
     "\\src\\views\\About",
-    "\\src\\views\\Experience"
+    "\\src\\views\\Projects"
   ],
-  "SelectedNode": "\\src\\App.js",
+  "SelectedNode": "\\src\\views\\About\\About.css",
   "PreviewInSolutionExplorer": false
 }
